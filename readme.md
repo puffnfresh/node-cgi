@@ -29,3 +29,7 @@ Copy `cgi.js` to the same directory and make the actual CGI script (`server.cgi`
     server.listen();
 
 As you can see, using the `cgi` library is very similar to the `http` library in node.js
+
+## License
+
+The `cgi.js` library is released under an MIT license.  See `LICENSE` for the full text of the license.
