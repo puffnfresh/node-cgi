@@ -1,0 +1,26 @@
+{
+	"name": "node-cgi",
+	"version": "0.1.1",
+	"author": "Brian McKenna <brian@brianmckenna.org>",
+	"description": "CGI adapter for node.js for servers that must use CGI",
+	"homepage": "http://brianmckenna.org/blog/nodejs_via_cgi",
+	"contributors": [
+		"Brian McKenna <brian@brianmckenna.org> (http://brianmckenna.org/)",
+		"Tyler Akins <fidian@rumkin.com> (http://rumkin.com/)"
+	],
+	"main": "./cgi.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pufuwozu/node-cgi.git"
+	},
+	"keywords": [
+		"cgi"
+	],
+	"dependencies": {},
+	"devDependencies": {},
+	"license": "MIT",
+	"engines": { 
+		"node": "~0.6",
+		"npm": "~1"
+	}
+}
