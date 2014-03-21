@@ -1,4 +1,5 @@
 var sys = require('sys'),
+fs = require('fs'),
 http = require('http');
 
 var Request = function() {
@@ -8,6 +9,12 @@ var Request = function() {
 		'user-agent': process.env['HTTP_USER_AGENT']
 	};
 	this.url = process.env['REQUEST_URI'];
+	this.contentLength = process.env['CONTENT_LENGTH'];
+	this.cookie = process.env['HTTP_COOKIE'];
+	this.postData = undefined;
+	if (this.method == 'POST'){
+		this.postData = fs.readFileSync('/dev/stdin').toString();
+	}
 };
 
 var Response = function() {
